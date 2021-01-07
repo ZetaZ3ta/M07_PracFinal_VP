@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+           <KeyPosition
+               motion:motionTarget="@+id/buttonClick"
+               motion:framePosition="25"
+               motion:keyPositionType="pathRelative"
+               motion:percentX="0"
+               motion:percentY="0.25" />
+           <KeyPosition
+               motion:motionTarget="@+id/buttonClick"
+               motion:framePosition="50"
+               motion:keyPositionType="pathRelative"
+               motion:percentX="0.5"
+               motion:percentY="0" />
+           <KeyPosition
+               motion:motionTarget="@+id/buttonClick"
+               motion:framePosition="75"
+               motion:keyPositionType="pathRelative"
+               motion:percentX="0.25"
+               motion:percentY="0.25" />
+       </KeyFrameSet>
+        <OnClick motion:targetId="@+id/buttonClick" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            motion:layout_constraintVertical_bias="0.898"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.821"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/buttonClick" />
+    </ConstraintSet>
+</MotionScene>

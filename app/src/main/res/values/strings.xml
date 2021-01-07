@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">cat.copernic.final.victor.paz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button1">Button 1</string>
+    <string name="button2">Button 2</string>
+    <string name="titleA">Fragment A</string>
+    <string name="titleB">Fragment B</string>
+    <string name="titleC">Fragment C</string>
+    <string name="subtitleA">Subtitle A</string>
+    <string name="subtitleB">Subtitle B</string>
+    <string name="subtitleC">Subtitle C</string>
+    <string name="name">Victor</string>
+    <string name="lastName">Paz</string>
+    <string name="click">Click somewhere!</string>
+    <string name="buttonClick">Click me!</string>
+    <string name="about">About</string>
+</resources>
